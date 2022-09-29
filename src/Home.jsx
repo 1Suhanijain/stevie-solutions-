@@ -1,22 +1,11 @@
-
 import React from 'react'
 import {Link , Outlet} from "react-router-dom"
 
 
-function Header(props) {
-  console.log(props.images.Home)
-
-
-  let background = {
-    position : "absolute",
-    width : "100%"
-    
-  }
-
-
+function Home() {
   return (
-    <div style={background}>
-      <div className='addBar' >
+    <div>
+       <div className='addBar' >
          <p>  {props.info.phoneno}</p>   
       </div> <hr className='hr'/>
       <div className='NavBar'>
@@ -28,16 +17,10 @@ function Header(props) {
         </ul>
       </div>  
       <Link className='btn' to= './Services' >view Portfolio</Link>
-
-      <div className="component2">
-        <div className="iconbox"></div><div className="box">ndwhiojoi;joi;lkdopjjpjopqk</div>
-        <div className="iconbox"></div> <div className="box">higyugougo</div>
-         <div className="iconbox"></div><div className="box">jigoygiuhiu</div>
-      </div>
       <Outlet/>
     </div>
     
   )
 }
 
-export default Header
+export default Home

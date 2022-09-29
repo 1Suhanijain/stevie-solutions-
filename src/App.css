@@ -3,18 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root{
+  --maincolor :rgb(250, 248, 246);
+  --buttoncolor : white;
+}
 .NavBar{
   display: flex;
   justify-content: space-between;
   padding: 1rem;
 }
+.NavBar a {
+  text-decoration: none;
+  color: var(--maincolor);
+}
 .banner{
-  height: 100vh;
-  background: url(firstbanner.jpg) center /cover;
+  
+  /* background: url(firstbanner.jpg) center /cover; */
 
 }
 .addBar{
   padding: 2rem;
+  color: var(--maincolor);
+}
+.hr{
+  background-color: #666666;
+  height: 1px;
 }
 .menu{
   display: flex;
@@ -26,4 +39,25 @@
 .menu li a{
   text-decoration: none;
   padding: 0.5rem;
+}
+.btn{
+  background-color:  #FFFFFF00;
+  color: var(--maincolor);
+  border: 1px solid var(--buttoncolor);
+  position: absolute;
+  /* height: 45px;
+  width: 165px; */
+  left: 43%;
+  top: 50%;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+   padding-top: 14px;
+    padding-bottom: 14px;
+    padding: 20px 40px; 
+}
+.btn:hover{
+  background-color: black;
+  color: white;
 }
